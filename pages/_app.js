@@ -1,9 +1,16 @@
 import "@/styles/globals.css";
-import {Sidebar} from "../components/Sidebar";
+import { Sidebar } from "../components/Sidebar";
+import {
+  GetAllDataContextProvider,
+  GetAllDataContext,
+} from "@/service/getData.context";
+
 export default function App({ Component, pageProps }) {
   return (
-    <Sidebar>
-      <Component {...pageProps} />
-    </Sidebar>
+    <GetAllDataContextProvider>
+      <Sidebar>
+        <Component {...pageProps} />
+      </Sidebar>
+    </GetAllDataContextProvider>
   );
 }

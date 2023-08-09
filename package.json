@@ -9,12 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "algoliasearch": "^4.17.1",
+    "axios": "^1.4.0",
     "chart.js": "^4.3.0",
     "next": "13.4.4",
     "react": "18.2.0",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.9.0"
+    "react-icons": "^4.9.0",
+    "react-instantsearch-dom": "^6.40.0",
+    "react-select-search": "^4.1.6"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
